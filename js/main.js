@@ -165,6 +165,27 @@
         $('body').removeClass('show-search-popup');
     });
 
+    window.onload = function () {
+        document.getElementById("formTimestamp").value = Date.now();
+      };
+      
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        const recaptchaResponse = document.querySelector('textarea[name="g-recaptcha-response"]').value;
+      
+        if (!recaptchaResponse) {
+          event.preventDefault();
+          alert("Please complete the reCAPTCHA validation.");
+          return;
+        }
+      
+        // Debugging: Log form data
+        const formData = new FormData(event.target);
+        for (const [key, value] of formData.entries()) {
+          console.log(key, value);
+        }
+      });
+      
+
     // Search validation
     $(document).on('click', '.search-button', function () {
         var error = true;
