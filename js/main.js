@@ -2090,7 +2090,7 @@
 
    /* ===================================
  Contact form validation
- ====================================== */
+ ====================================== 
 
  document.addEventListener("DOMContentLoaded", function() {
     const contactForm = document.getElementById('contact-form');
@@ -2131,7 +2131,7 @@
         });
     }
 });
-
+*/
 
 
     /* ===================================
