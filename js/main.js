@@ -200,6 +200,8 @@
       
           if (response.ok) {
             alert(result.message || "Form submitted successfully!");
+            form.reset(); // Reset the form fields on success
+            grecaptcha.reset(); // Reset reCAPTCHA widget
           } else {
             alert(result.message || "There was an error submitting the form.");
           }
