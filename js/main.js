@@ -170,7 +170,9 @@
       };
       
       document.getElementById("contact-form").addEventListener("submit", async function (event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
+
+        const form = event.target;
       
         const recaptchaResponse = document.querySelector('textarea[name="g-recaptcha-response"]').value;
       
@@ -200,8 +202,8 @@
       
           if (response.ok) {
             alert(result.message || "Form submitted successfully!");
-            form.reset(); // Reset the form fields on success
-            grecaptcha.reset(); // Reset reCAPTCHA widget
+            form.reset();
+            grecaptcha.reset();
           } else {
             alert(result.message || "There was an error submitting the form.");
           }
