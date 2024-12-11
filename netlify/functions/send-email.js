@@ -1,5 +1,4 @@
 const sgMail = require("@sendgrid/mail");
-const querystring = require("querystring");
 const axios = require("axios");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -12,13 +11,9 @@ exports.handler = async (event) => {
     };
   }
 
-  let body;
   try {
-    if (event.headers["content-type"] === "application/json") {
-      body = JSON.parse(event.body);
-    } else {
-      body = querystring.parse(event.body);
-    }
+    // Parse the JSON body directly (frontend sends JSON)
+    const body = JSON.parse(event.body);
 
     const {
       name,
@@ -33,6 +28,7 @@ exports.handler = async (event) => {
 
     console.log("Parsed Fields:", { name, email, phone, vin, message, website, formTimestamp, recaptchaResponse });
 
+    // Validate required fields
     if (!formTimestamp || !recaptchaResponse) {
       console.warn("Missing required fields");
       return {
@@ -72,6 +68,7 @@ exports.handler = async (event) => {
     );
 
     if (!recaptchaResponseData.data.success) {
+      console.warn("reCAPTCHA validation failed:", recaptchaResponseData.data);
       return {
         statusCode: 400,
         body: JSON.stringify({ message: "reCAPTCHA validation failed" }),
@@ -93,7 +90,7 @@ exports.handler = async (event) => {
       body: JSON.stringify({ message: "Email sent successfully" }),
     };
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error processing form submission:", error);
     return {
       statusCode: 500,
       body: JSON.stringify({ message: "Internal Server Error" }),

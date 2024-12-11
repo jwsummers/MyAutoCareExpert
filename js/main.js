@@ -169,19 +169,43 @@
         document.getElementById("formTimestamp").value = Date.now();
       };
       
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
+      document.getElementById("contact-form").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+      
         const recaptchaResponse = document.querySelector('textarea[name="g-recaptcha-response"]').value;
       
         if (!recaptchaResponse) {
-          event.preventDefault();
           alert("Please complete the reCAPTCHA validation.");
           return;
         }
       
-        // Debugging: Log form data
+        // Serialize form data as JSON
         const formData = new FormData(event.target);
-        for (const [key, value] of formData.entries()) {
-          console.log(key, value);
+        const jsonData = {};
+        formData.forEach((value, key) => {
+          jsonData[key] = value;
+        });
+      
+        try {
+          // Send the JSON payload to the Netlify function
+          const response = await fetch(event.target.action, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(jsonData),
+          });
+      
+          const result = await response.json();
+      
+          if (response.ok) {
+            alert(result.message || "Form submitted successfully!");
+          } else {
+            alert(result.message || "There was an error submitting the form.");
+          }
+        } catch (error) {
+          console.error("Submission error:", error);
+          alert("An unexpected error occurred. Please try again later.");
         }
       });
       
