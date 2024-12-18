@@ -231,6 +231,8 @@
       contactForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
+        const form = event.target;
+
         // Verify reCAPTCHA
         const recaptchaResponse = document.querySelector(
           'textarea[name="g-recaptcha-response"]'
@@ -240,14 +242,20 @@
           return;
         }
 
-        // Gather form data
-        const formData = new FormData(contactForm);
+        const formData = new FormData(event.target);
+        const jsonData = {};
+        formData.forEach((value, key) => {
+          jsonData[key] = value;
+        });
 
-        // Send the form data to the server
         try {
-          const response = await fetch(contactForm.action, {
+          // Send the JSON payload to the Netlify function
+          const response = await fetch(event.target.action, {
             method: "POST",
-            body: formData,
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(jsonData),
           });
 
           const result = await response.json();
