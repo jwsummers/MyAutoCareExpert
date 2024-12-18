@@ -1,370 +1,698 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>My Auto Care Expert | M.A.C.E.</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="Mobile Mechanic Business">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="We provide professional, cost-effective, and reliable mobile mechanic services.">
-        <!-- favicon icon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <!-- google fonts preconnect -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- style sheets and font icons -->
-        <link rel="stylesheet" href="css/vendors.min.css"/>
-        <link rel="stylesheet" href="css/icon.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="css/startup.css" />
-    </head>
-    <body data-mobile-nav-style="classic">
-        <!-- start header -->
-        <header> 
-            <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed">
-                <div class="container-fluid d-flex justify-content-between align-items-center">
-                    <!-- Logo -->
-                    <div class="col-auto col-lg-2 d-flex align-items-center">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/Logo White.png" alt="" class="default-logo">
-                            <img src="images/Logo Black.png" alt="" class="alt-logo">
-                            <img src="images/Logomark Black.png" alt="" class="mobile-logo"> 
-                        </a>
-                    </div>
-                    <!-- Navbar Links (Centered on large screens) -->
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav alt-font d-flex flex-nowrap justify-content-center"> 
-                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- Call to Action (Phone) on large screens -->
-<div class="col-auto d-none d-lg-flex text-end align-items-center">
-    <div class="header-icon">
-        <a href="tel:+1234567890" class="search-form-icon header-search-form" aria-label="call">
-            <i class="feather icon-feather-phone text-white"></i> 
-            <span class="d-block text-white">Call Us: (123) 456-7890</span>
-            <span class="d-block text-white" style="font-size: 12px;">(Coming Soon)</span>
-        </a>
-    </div>
-</div>
-                    <!-- Mobile Nav Toggle Button (visible on small screens) -->
-                    <div class="col-auto d-lg-none">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-            <!-- end navigation -->
-        </header>
-        <!-- end header -->
-        <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0 cover-background background-position-center-top" style="background-image: url(images/services-hero.jpg)">
-            <div class="opacity-extra-medium bg-gradient-black-green"></div>
-            <div class="container">
-                <div class="row align-items-center justify-content-center small-screen">
-                    <div class="col-xl-6 col-lg-7 col-sm-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <div><h1 class="text-uppercase mb-15px alt-font text-white opacity-6 fw-500 ls-2px" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Our services"], "duration": 400, "delay": 0, "speed": 50, "easing": "easeOutQuad" }'></h1></div>
-                        <h2 class="m-auto text-white alt-font text-shadow-double-large fw-700 w-90 xl-w-100" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["We help service and repair your vehicle"], "duration": 400, "delay": 0, "speed": 50, "easing": "easeOutQuad" }'></h2>
-                    </div>
-                    <div class="down-section text-center" data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <a href="#down-section" class="section-link">
-                            <div class="text-white">
-                                <i class="line-icon-Down icon-medium"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+  <head>
+    <title>My Auto Care Expert | M.A.C.E.</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Mobile Mechanic Business" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We provide professional, cost-effective, and reliable mobile mechanic services."
+    />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- style sheets and font icons -->
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/startup.css" />
+  </head>
+  <body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header>
+      <!-- start navigation -->
+      <nav
+        class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed"
+      >
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <!-- Logo -->
+          <div class="col-auto col-lg-2 d-flex align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/Logo White.png" alt="" class="default-logo" />
+              <img src="images/Logo Black.png" alt="" class="alt-logo" />
+              <img src="images/Logomark Black.png" alt="" class="mobile-logo" />
+            </a>
+          </div>
+          <!-- Navbar Links (Centered on large screens) -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav alt-font d-flex flex-nowrap justify-content-center"
+            >
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Call to Action (Phone) on large screens -->
+          <div class="col-auto d-none d-lg-flex text-end align-items-center">
+            <div class="header-icon">
+              <a
+                href="tel:+1234567890"
+                class="search-form-icon header-search-form"
+                aria-label="call"
+              >
+                <i class="feather icon-feather-phone text-white"></i>
+                <span class="d-block text-white">Call Us: (123) 456-7890</span>
+                <span class="d-block text-white" style="font-size: 12px"
+                  >(Coming Soon)</span
+                >
+              </a>
             </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section -->
-        <section id="down-section" class="background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
-            <div class="container-fluid d-none d-md-block">
-                <div class="row">
-                    <div class="p-0 overlap-section" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
-                        <img src="images/bg-01.png" alt="">
-                    </div>
-                </div> 
+          </div>
+          <!-- Mobile Nav Toggle Button (visible on small screens) -->
+          <div class="col-auto d-lg-none">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- end navigation -->
+    </header>
+    <!-- end header -->
+    <!-- start page title -->
+    <section
+      class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0 cover-background background-position-center-top"
+      style="background-image: url(images/services-hero.jpg)"
+    >
+      <div class="opacity-extra-medium bg-gradient-black-green"></div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center small-screen">
+          <!-- Title Section -->
+          <div
+            class="col-xl-6 col-lg-7 col-sm-8 position-relative text-center page-title-extra-small"
+            data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'
+          >
+            <div>
+              <h1
+                class="text-uppercase mb-15px alt-font text-white opacity-6 fw-500 ls-2px"
+                data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Our Services"], "duration": 400, "delay": 0, "speed": 50, "easing": "easeOutQuad" }'
+              >
+                Our Services
+              </h1>
             </div>
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-10 position-relative md-mb-50px sm-mb-30px" data-anime='{ "effect": "slide", "direction": "tb", "color": "#252840", "duration": 1000, "delay": 0 }'>
-                        <img src="images/brake-service.jpg" alt="" class="w-100 border-radius-5px"> 
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-10">
-                        <span class="alt-font text-uppercase fw-600 mb-15px d-inline-block ls-1px" data-anime='{ "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'>Amazing expertise</span>
-                        <h3 class="alt-font fw-600 text-dark-gray ls-minus-1px mb-18 md-mb-6 w-90 shadow-none" data-anime='{ "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }' data-shadow-animation="true" data-animation-delay="1000">20 Years of <span class="text-highlight fw-800">experience<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span></h3>  
-                        <div class="progress-bar-style-01 mt-16 sm-mt-70px" data-anime='{ "el": "childs", "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <!-- start progress bar item -->
-                            <div class="progress mb-14 md-mb-70px bg-extra-medium-gray">
-                                <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Diagnostic</div>
-                                <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                            <!-- end progress bar item -->
-                            <!-- start progress bar item -->
-                            <div class="progress mb-14 md-mb-70px bg-extra-medium-gray">
-                                <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Maintenance</div>
-                                <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                            <!-- end progress bar item -->
-                            <!-- start progress bar item -->
-                            <div class="progress bg-extra-medium-gray">
-                                <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Repair</div>
-                                <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                            <!-- end progress bar item -->
-                        </div>
-                    </div> 
-                </div> 
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- start section -->
-        <section class="bg-dark-gray overflow-hidden">
-            <div class="container pb-5 xs-pb-8">
-                <div class="row justify-content-center text-center text-lg-start">
-                    <div class="col-lg-6 col-md-9 col-sm-8 md-mb-4">
-                        <h3 class="alt-font fw-700 text-white w-80 lg-w-100 m-0 ls-minus-1px" data-anime='{ "el": "lines", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>We provide automotive service for extremly competitive prices.</h3>
-                    </div>
-                    <div class="col-lg-6 col-md-9 last-paragraph-no-margin">
-                        <p class="w-90 lg-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>A number of facotrs allow us to ensure you keep your vehicle running smoothly without having to break the bank.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid ps-10 pe-10 xxl-ps-5 xxl-pe-5 xl-px-0"> 
-                <div class="row justify-content-center">
-                    <div class="col-12 sliding-box-style-03 sliding-box justify-content-center d-flex lg-flex-nowrap flex-wrap" data-anime='{ "el": "childs", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay":200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <!-- start interactive banners item -->
-                        <div class="sliding-box-item box-shadow-extra-large md-mb-30px">
-                            <div class="sliding-box-img position-relative">
-                                <img src="images/overhead.jpg" alt="" class="w-100" />
-                                <div class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center">
-                                    <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">Minimal Overhead</div>
-                                    <span class="number fs-70 lh-70 fw-300 text-white">01</span>
-                                </div>
-                                <div class="overlay bg-dark-gray"></div>
-                            </div>
-                            <div class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin">
-                                <div class="content-hover w-100">
-                                    <div class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px">Don't pay for the overhead</div>
-                                    <p>We save on our bills to keep your costs to a minimum.</p>
-                                    <a href="contact.html" class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px">Contact now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end interactive banners item -->
-                        <!-- start interactive banners item -->
-                        <div class="sliding-box-item box-shadow-extra-large active md-mb-30px">
-                            <div class="sliding-box-img position-relative">
-                                <img src="/images/parts.jpg" alt="" class="w-100" />
-                                <div class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center">
-                                    <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">Options</div>
-                                    <span class="number fs-70 lh-70 fw-300 text-white">02</span>
-                                </div>
-                                <div class="overlay bg-dark-gray"></div>
-                            </div>
-                            <div class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin">
-                                <div class="content-hover w-100">
-                                    <div class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px">We Offer Options</div>
-                                    <p>Utilizing multiple parts resources we get you the right part at the right cost.</p>
-                                    <a href="contact.html" class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px">Contact now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end interactive banners item -->
-                        <!-- start interactive banners item -->
-                        <div class="sliding-box-item box-shadow-extra-large">
-                            <div class="sliding-box-img position-relative">
-                                <img src="images/maintenance.jpg" alt="" class="w-100" />
-                                <div class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center">
-                                    <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">Preventive Maintenance</div>
-                                    <span class="number fs-70 lh-70 fw-300 text-white">03</span>
-                                </div>
-                                <div class="overlay bg-dark-gray"></div>
-                            </div>
-                            <div class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin">
-                                <div class="content-hover w-100">
-                                    <div class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px">Maintain to Save</div>
-                                    <p>We encourage and make a commitment to maintenance to avoid future issues.</p>
-                                    <a href="contact.html" class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px">Contact now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end interactive banners item -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- start section -->
-        <section class="background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
-            <div class="container">
-                <div class="row justify-content-center mb-1">
-                    <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="alt-font text-uppercase fw-600 d-inline-block ls-1px">Top performance</span>
-                        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="1000">Mechanical <span class="text-highlight fw-800">services<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span></h3>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>                  
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03 mb-10px">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/oil.png" alt=""></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">Oil Change</a>
-                                <p class="w-80 md-w-100 m-auto">Our oil change service includes replacing the engine oil and filter, as well as topping off all necessary fluids to ensure your engine runs smoothly.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03 mb-10px">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/brakes.png" alt=""></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">Brakes</a>
-                                <p class="w-80 md-w-100 m-auto">Our brake service involves a comprehensive inspection of the braking system, including brake pads, rotors, and fluid, ensuring optimal stopping power and safety.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03 mb-10px">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/airCon.png" alt=""></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">HVAC</a>
-                                <p class="w-80 md-w-100 m-auto">Our AC service covers a thorough inspection and servicing of the air conditioning system, including refrigerant top-up, leak detection, and component checks to keep your vehicle cool.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03 sm-mb-10px">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/suspension.png" alt="" height="70" width="70"></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">Suspension</a>
-                                <p class="w-80 md-w-100 m-auto">Our suspension repair services includes diagnosing driveability and noise concerns as well as issues with shocks, struts, and other suspension components to provide a smooth and comfortable ride.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03 xs-mb-10px">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/battery.png" alt=""></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">Battery & Electrical</a>
-                                <p class="w-80 md-w-100 m-auto">Our battery replacement services includes ability for full diagnostic of the starting and charging system, including alternator and starter repair, to ensure your vehicle starts reliably.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-03">
-                        <div class="feature-box p-6 overflow-hidden">
-                            <div class="feature-box-icon">
-                                <a href="services-details.html"><img src="images/engine.png" alt=""></a>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <a href="services-details.html" class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18">Engine Diagnostics</a>
-                                <p class="w-80 md-w-100 m-auto">Our engine diagnostics involves using advanced tools to identify and fix engine issues as well as Check Engine Light diagnostics, ensuring your vehicle runs efficiently and preventing potential breakdowns.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- start footer -->
-<footer class="footer-dark bg-slate-blue p-0">
-    <div class="container-fluid d-none d-md-block">
+            <h2
+              class="m-auto text-white alt-font text-shadow-double-large fw-700 w-90 xl-w-100"
+              data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Comprehensive Care for Your Vehicle"], "duration": 400, "delay": 0, "speed": 50, "easing": "easeOutQuad" }'
+            >
+              Comprehensive Care for Your Vehicle
+            </h2>
+          </div>
+          <!-- Scroll Down Indicator -->
+          <div
+            class="down-section text-center"
+            style="position: relative; z-index: 3; bottom: 0"
+            data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+          >
+            <a
+              href="#down-section"
+              class="section-link"
+              style="cursor: pointer"
+            >
+              <div class="text-white">
+                <i class="line-icon-Down icon-medium"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end page title -->
+    <!-- start section -->
+    <section
+      id="down-section"
+      class="background-position-center-top sm-background-image-none"
+      style="background-image: url('images/vertical-line-bg.svg')"
+    >
+      <div class="container-fluid d-none d-md-block">
         <div class="row">
-            <div class="p-0 overlap-section" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
-                <img src="images/bg-01.png" alt="">
-            </div>
-        </div> 
-    </div>
-    <div class="container">
-        <div class="row pt-4 lg-pt-2 sm-pt-45px">
-            <!-- Left: Logo and paragraph -->
-            <div class="col-12 col-md-4 text-md-start text-center mb-4 mb-md-0">
-                <a href="index.html" class="footer-logo mb-20px md-mb-10px d-inline-block" aria-label="logo">
-                    <img src="images/Logomark White.png" alt="My Auto Care Expert Logo">
-                </a>
-                <p>Your trusted neighborhood mechanic, offering convenient auto repairs at your convenience</p>
-                <div class="elements-social social-icon-style-02 mt-20px">
-                    <ul class="small-icon light">
-                        <li class="my-0"><a href="#" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="my-0"><a href="#" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></li> 
-                        <li class="my-0"><a href="#" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li> 
-                    </ul>
+          <div
+            class="p-0 overlap-section"
+            data-bottom-top="transform: translateY(-50px)"
+            data-top-bottom="transform: translateY(50px)"
+          >
+            <img src="images/bg-01.png" alt="Background graphic" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div
+            class="col-lg-6 col-md-10 position-relative md-mb-50px sm-mb-30px"
+            data-anime='{ "effect": "slide", "direction": "tb", "color": "#252840", "duration": 1000, "delay": 0 }'
+          >
+            <img
+              src="images/brake-service.jpg"
+              alt="Brake service in action"
+              class="w-100 border-radius-5px"
+            />
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-10">
+            <span
+              class="alt-font text-uppercase fw-600 mb-15px d-inline-block ls-1px"
+              data-anime='{ "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'
+            >
+              Exceptional Expertise
+            </span>
+            <h3
+              class="alt-font fw-600 text-dark-gray ls-minus-1px mb-18 md-mb-6 w-90 shadow-none"
+              data-anime='{ "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'
+              data-shadow-animation="true"
+              data-animation-delay="1000"
+            >
+              20 Years of Automotive
+              <span class="text-highlight fw-800"
+                >Excellence<span
+                  class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"
+                ></span
+              ></span>
+            </h3>
+            <p>
+              With decades of hands-on experience in diagnostics, maintenance,
+              and repairs, we pride ourselves on offering the highest level of
+              expertise and care for your vehicle. Our dedication to quality
+              ensures your peace of mind every time you hit the road.
+            </p>
+            <div
+              class="progress-bar-style-01 mt-16 sm-mt-70px"
+              data-anime='{ "el": "childs", "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'
+            >
+              <!-- start progress bar item -->
+              <div class="progress mb-14 md-mb-70px bg-extra-medium-gray">
+                <div
+                  class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600"
+                >
+                  Precision Diagnostics
                 </div>
+                <div
+                  class="progress-bar bg-gradient-emerald-blue-emerald-green"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 80%"
+                ></div>
+              </div>
+              <!-- end progress bar item -->
+              <!-- start progress bar item -->
+              <div class="progress mb-14 md-mb-70px bg-extra-medium-gray">
+                <div
+                  class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600"
+                >
+                  Reliable Maintenance
+                </div>
+                <div
+                  class="progress-bar bg-gradient-emerald-blue-emerald-green"
+                  role="progressbar"
+                  aria-valuenow="87"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 87%"
+                ></div>
+              </div>
+              <!-- end progress bar item -->
+              <!-- start progress bar item -->
+              <div class="progress bg-extra-medium-gray">
+                <div
+                  class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600"
+                >
+                  Comprehensive Repairs
+                </div>
+                <div
+                  class="progress-bar bg-gradient-emerald-blue-emerald-green"
+                  role="progressbar"
+                  aria-valuenow="93"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 93%"
+                ></div>
+              </div>
+              <!-- end progress bar item -->
             </div>
-            <!-- Center: Services -->
-            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-                <span class="alt-font fw-500 d-block text-white mb-10px">M.A.C.E.</span>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- Right: Contact -->
-            <div class="col-12 col-md-4 text-md-end text-center">
-                <span class="alt-font fw-500 d-block text-white mb-10px">Contact</span>
-                <ul class="list-unstyled">
-                    <li><a href="#">(123) 456-7890 (Number coming soon)</a></li>
-                    <li><a href="/contact.html">Email Us</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="row justify-content-center align-items-center pt-5 sm-pt-35px">
-            <div class="col-12">
-                <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
-            </div>
-            <div class="col-12 text-center">
-                <p>&copy; 2024 My Auto Care Expert. All rights reserved.</p>
-            </div>
+      </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-dark-gray overflow-hidden">
+      <div class="container pb-5 xs-pb-8">
+        <div class="row justify-content-center text-center text-lg-start">
+          <div class="col-lg-6 col-md-9 col-sm-8 md-mb-4">
+            <h3
+              class="alt-font fw-700 text-white w-80 lg-w-100 m-0 ls-minus-1px"
+              data-anime='{ "el": "lines", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'
+            >
+              Affordable Automotive Service Without Compromise.
+            </h3>
+          </div>
+          <div class="col-lg-6 col-md-9 last-paragraph-no-margin">
+            <p
+              class="w-90 lg-w-100"
+              data-anime='{ "el": "lines", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'
+            >
+              By optimizing our resources and reducing unnecessary expenses, we
+              ensure that your vehicle receives high-quality care without
+              exceeding your budget.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="container-fluid ps-10 pe-10 xxl-ps-5 xxl-pe-5 xl-px-0">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 sliding-box-style-03 sliding-box justify-content-center d-flex lg-flex-nowrap flex-wrap"
+            data-anime='{ "el": "childs", "translateY": [30, 0], "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay":200, "staggervalue": 300, "easing": "easeOutQuad" }'
+          >
+            <!-- Minimal Overhead -->
+            <div class="sliding-box-item box-shadow-extra-large md-mb-30px">
+              <div class="sliding-box-img position-relative">
+                <img
+                  src="images/overhead.jpg"
+                  alt="Minimal overhead costs"
+                  class="w-100"
+                />
+                <div
+                  class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center"
+                >
+                  <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">
+                    Minimal Overhead
+                  </div>
+                  <span class="number fs-70 lh-70 fw-300 text-white">01</span>
+                </div>
+                <div class="overlay bg-dark-gray"></div>
+              </div>
+              <div
+                class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin"
+              >
+                <div class="content-hover w-100">
+                  <div
+                    class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px"
+                  >
+                    Lower Overhead, Lower Costs
+                  </div>
+                  <p>
+                    Our streamlined approach minimizes operational expenses,
+                    passing the savings directly to you.
+                  </p>
+                  <a
+                    href="contact.html"
+                    class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px"
+                  >
+                    Contact Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Options -->
+            <div
+              class="sliding-box-item box-shadow-extra-large active md-mb-30px"
+            >
+              <div class="sliding-box-img position-relative">
+                <img src="images/parts.jpg" alt="Parts options" class="w-100" />
+                <div
+                  class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center"
+                >
+                  <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">
+                    Flexible Options
+                  </div>
+                  <span class="number fs-70 lh-70 fw-300 text-white">02</span>
+                </div>
+                <div class="overlay bg-dark-gray"></div>
+              </div>
+              <div
+                class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin"
+              >
+                <div class="content-hover w-100">
+                  <div
+                    class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px"
+                  >
+                    Customized Part Solutions
+                  </div>
+                  <p>
+                    We collaborate with multiple suppliers to find the perfect
+                    part for your budget and needs.
+                  </p>
+                  <a
+                    href="contact.html"
+                    class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px"
+                  >
+                    Contact Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Preventive Maintenance -->
+            <div class="sliding-box-item box-shadow-extra-large">
+              <div class="sliding-box-img position-relative">
+                <img
+                  src="images/maintenance.jpg"
+                  alt="Preventive maintenance"
+                  class="w-100"
+                />
+                <div
+                  class="overlay-contnet w-100 h-100 d-flex flex-column align-items-center justify-content-center z-index-2 text-center"
+                >
+                  <div class="alt-font fw-600 fs-22 lh-30 text-white w-60">
+                    Preventive Maintenance
+                  </div>
+                  <span class="number fs-70 lh-70 fw-300 text-white">03</span>
+                </div>
+                <div class="overlay bg-dark-gray"></div>
+              </div>
+              <div
+                class="text-center d-flex flex-column align-items-center justify-content-center sliding-box-content bg-white p-60px xxl-p-50px xl-p-40px lg-p-35px last-paragraph-no-margin"
+              >
+                <div class="content-hover w-100">
+                  <div
+                    class="text-dark-gray alt-font fw-700 fs-18 lh-28 m-auto mb-5px"
+                  >
+                    Proactive Care Saves Money
+                  </div>
+                  <p>
+                    Regular maintenance prevents costly future repairs, keeping
+                    your car in top condition.
+                  </p>
+                  <a
+                    href="contact.html"
+                    class="btn btn-small btn-gradient-emerald-blue-emerald-green btn-round-edge mt-25px"
+                  >
+                    Contact Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end section -->
+    <!-- start section -->
+    <section
+      class="background-position-center-top sm-background-image-none"
+      style="background-image: url('images/vertical-line-bg.svg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-1">
+          <div
+            class="col-lg-7 text-center"
+            data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+          >
+            <span class="alt-font text-uppercase fw-600 d-inline-block ls-1px"
+              >Top performance</span
+            >
+            <h3
+              class="alt-font text-dark-gray fw-600 ls-minus-1px shadow-none"
+              data-shadow-animation="true"
+              data-animation-delay="1000"
+            >
+              Mechanical
+              <span class="text-highlight fw-800">
+                services<span
+                  class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"
+                ></span>
+              </span>
+            </h3>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center"
+          data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+        >
+          <!-- Oil Change -->
+          <div class="col icon-with-text-style-03 mb-10px">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#oil-change"
+                  ><img src="images/oil.png" alt="Oil Change"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#oil-change"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >Oil Change</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Replace engine oil and filter while topping off all fluids for
+                  smooth performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Brakes -->
+          <div class="col icon-with-text-style-03 mb-10px">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#brakes"
+                  ><img src="images/brakes.png" alt="Brake Service"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#brakes"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >Brakes</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Inspect brake pads, rotors, and fluid to ensure safety and
+                  stopping power.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- HVAC -->
+          <div class="col icon-with-text-style-03 mb-10px">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#hvac"
+                  ><img src="images/airCon.png" alt="HVAC Service"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#hvac"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >HVAC</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Comprehensive air conditioning inspection and servicing for
+                  comfort.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Suspension -->
+          <div class="col icon-with-text-style-03 sm-mb-10px">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#suspension"
+                  ><img
+                    src="images/suspension.png"
+                    alt="Suspension Service"
+                    height="70"
+                    width="70"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#suspension"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >Suspension</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Diagnose and repair suspension for a smooth, noise-free ride.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Battery & Electrical -->
+          <div class="col icon-with-text-style-03 xs-mb-10px">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#battery-electrical"
+                  ><img src="images/battery.png" alt="Battery & Electrical"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#battery-electrical"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >Battery & Electrical</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Full diagnostics for starting and charging systems, including
+                  alternator and battery replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Engine Diagnostics -->
+          <div class="col icon-with-text-style-03">
+            <div class="feature-box p-6 overflow-hidden">
+              <div class="feature-box-icon">
+                <a href="services-details.html#engine-diagnostics"
+                  ><img src="images/engine.png" alt="Engine Diagnostics"
+                /></a>
+              </div>
+              <div class="feature-box-content last-paragraph-no-margin">
+                <a
+                  href="services-details.html#engine-diagnostics"
+                  class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-18"
+                  >Engine Diagnostics</a
+                >
+                <p class="w-80 md-w-100 m-auto">
+                  Advanced tools to diagnose and resolve engine issues
+                  efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end section -->
+    <!-- start footer -->
+    <footer class="footer-dark bg-dark-gray p-0">
+      <div class="container">
+        <div class="row pt-4 lg-pt-2 sm-pt-45px">
+          <!-- Left: Logo and About -->
+          <div class="col-12 col-md-4 text-md-start text-center mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="footer-logo mb-20px md-mb-10px d-inline-block"
+              aria-label="logo"
+            >
+              <img
+                src="images/Logomark White.png"
+                alt="My Auto Care Expert Logo"
+              />
+            </a>
+            <p>
+              Affordable and reliable auto repair services in Maricopa, AZ,
+              provided by a trusted neighborhood mechanic.
+            </p>
+            <div class="elements-social social-icon-style-02 mt-20px">
+              <ul class="small-icon light">
+                <li class="my-0">
+                  <a href="#" target="_blank" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="my-0">
+                  <a href="#" target="_blank" aria-label="Tik-Tok"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </li>
+                <li class="my-0">
+                  <a href="#" target="_blank" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Center: Quick Links -->
+          <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+            <span class="alt-font fw-500 d-block text-white mb-10px"
+              >Quick Links</span
+            >
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Right: Contact -->
+          <div class="col-12 col-md-4 text-md-end text-center">
+            <span class="alt-font fw-500 d-block text-white mb-10px"
+              >Contact Us</span
+            >
+            <ul class="list-unstyled">
+              <li><a href="tel:1234567890">(123) 456-7890</a></li>
+              <li>
+                <a href="mailto:maceautomotive@gmail.com">Email Questions</a
+                ><br />
+                <span class="text-small text-white d-block mt-1">
+                  For general questions. For quotes or repair requests, please
+                  use our
+                  <a
+                    href="contact.html"
+                    class="text-gradient-emerald-blue-emerald-green"
+                    >contact form</a
+                  >.
+                </span>
+              </li>
+            </ul>
+            <div class="mt-3">
+              <a
+                href="contact.html"
+                class="btn btn-small text-white btn-gradient-emerald-blue-emerald-green btn-round-edge"
+              >
+                Schedule Your Repair
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-center align-items-center pt-5 sm-pt-35px"
+        >
+          <div class="col-12">
+            <div
+              class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"
+            ></div>
+          </div>
+          <div class="col-12 text-center">
+            <p>&copy; 2024 My Auto Care Expert. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+      <a href="#" class="scroll-top" aria-label="scroll">
+        <span class="scroll-text">Scroll</span
+        ><span class="scroll-line"><span class="scroll-point"></span></span>
+      </a>
     </div>
-</footer>
-<!-- end footer -->
- <!-- start scroll progress -->
- <div class="scroll-progress d-none d-xxl-block">
-    <a href="#" class="scroll-top" aria-label="scroll">
-      <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
-    </a>
-  </div>
-  <!-- end scroll progress -->
-        <!-- javascript libraries -->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
