@@ -19324,3 +19324,40 @@ footer .footer-navbar .nav-item:last-child a {
 .footer-demo img {
   max-height: 55px !important;
 }
+
+/* Hero CTA normalization (prevents mismatched heights between button variants) */
+.hero-cta .hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  line-height: 1;               /* key: stops extra height from line-height differences */
+  padding: 14px 26px;           /* unify padding across variants */
+  min-height: 52px;             /* consistent button height */
+  box-sizing: border-box;
+}
+
+.hero-cta .hero-btn .btn-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Improve readability of transparent button over image overlay */
+.hero-cta .hero-btn--outline {
+  background: rgba(0, 0, 0, 0.25);     /* subtle fill so text reads better */
+  border-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(2px);          /* nice effect if supported */
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.hero-cta .hero-btn--outline:hover,
+.hero-cta .hero-btn--outline:focus {
+  background: rgba(255, 255, 255, 0.12); /* keeps it readable but still “outline” */
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Optional: slightly stronger contrast on focus for accessibility */
+.hero-cta .hero-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+}
